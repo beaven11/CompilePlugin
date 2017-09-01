@@ -39,6 +39,7 @@ public class PluginMain implements Plugin<Project> {
                     def name = fileName.substring(0, fileName.indexOf("."))
                     println("依赖文件--${fileName}")
                     compile(name: name, ext: 'aar')
+//                    dependencies.add("compile", [name: name, ext: 'aar'])
                 }
         }
         println("依赖结束")
